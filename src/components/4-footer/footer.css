@@ -1,0 +1,29 @@
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+ margin-inline: auto;
+ 
+  padding: 20px 0;
+ background: var(--secondary);
+ border-top: 1px solid var(--border);
+ 
+ }
+ footer.flex p{
+   color: var(--footer-c);
+ }
+ 
+ @media (max-width: 1000px) {
+   footer {
+     width: 90%;
+   }
+ }
+ @media (max-width: 600px) {
+   footer {
+     width: 98%;
+   }
+ }
+  
+ 
+ 

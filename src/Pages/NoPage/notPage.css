@@ -1,0 +1,13 @@
+.Error {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.Error h1 {
+    color: var(--blue);
+    font-size: 2.5rem;
+}

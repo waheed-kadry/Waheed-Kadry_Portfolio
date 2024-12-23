@@ -1,0 +1,208 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  padding: 50px 0 0 0;
+}
+.about h1 {
+  color: var(--blue);
+  font-size: 40px;
+  letter-spacing: 1px;
+  margin: 10px auto;
+  cursor: default;
+}
+.about h2 {
+  color: var(--blue);
+  font-size: 35px;
+  letter-spacing: 1px;
+  margin: 10px auto;
+  cursor: default;
+}
+.about p {
+  color: var(--title);
+  letter-spacing: 0.6px;
+}
+.about .right-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 0px 0px 40px 0px;
+  flex-wrap: nowrap;
+}
+.about .left-section {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 30px 0 30px 30px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.about .left-section img {
+  width: 100%;
+  margin: 0px auto 16px auto;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+.about .left-section p,
+.about .left-section h2 {
+  margin: 2px 0 6px 0;
+}
+.about .right-section {
+  width: 60%;
+  box-sizing: border-box;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 0px auto;
+}
+.about .right-section p,
+.about .right-section h2 {
+  width: 100%;
+  margin: 2px 0 6px 0;
+  display: flex;
+}
+.about .right-section h2 span.icon-question {
+  display: block;
+}
+.about .right-section h2:hover span.icon-question {
+  animation: goAway 1s 1 alternate;
+  -webkit-animation: goAway 1.2s 1;
+}
+@keyframes goAway {
+  0% {
+    transform: translateX(0) rotate(0deg);
+  }
+  50% {
+    transform: translateX(50px) rotate(180deg);
+  }
+  100% {
+    transform: translateX(0) rotate(360deg);
+  }
+}
+.about .right-section div {
+  margin: 20px 0;
+}
+.about .right-section a {
+  padding: 8px 24px;
+  text-decoration: none;
+  background-color: var(--blue);
+  color: var(--nav);
+  font-size: 18px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+.about .right-section a:hover {
+  opacity: 0.8;
+}
+.about .text-center {
+  text-align: center;
+}
+.about .skills-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+}
+.about .skill {
+  width: calc((100% - 50px) / 6);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 24px;
+  height: 80px;
+  box-sizing: border-box;
+  background-color: var(--nav);
+  transition-duration: 0.2s;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+.about .skill:hover {
+  background-color: var(--blue);
+}
+.about .skill:hover h4 {
+  color: var(--nav);
+}
+.about .skill:hover img {
+  filter: drop-shadow(0px 0px 1px var(--font));
+  -webkit-filter: drop-shadow(0px 0px 1px var(--font));
+}
+.about .skill div {
+  width: fit-content;
+  text-align: center;
+}
+.about .skill div img {
+  width: 50px;
+  padding: 1px 12px 1px 1px;
+  transition-duration: 0.2s;
+  filter: drop-shadow(0px 0px 1px var(--background));
+  -webkit-filter: drop-shadow(0px 0px 1px var(--background));
+}
+.about .skill h4 {
+  color: var(--blue);
+  font-size: 20px;
+  transition-duration: 0.2s;
+  cursor: default;
+}
+@media (max-width: 1351px) {
+  .about .skill {
+    width: calc((100% - 40px) / 5);
+  }
+}
+@media (max-width: 1127px) {
+  .about .skill {
+    width: calc((100% - 30px) / 4);
+  }
+}
+@media (max-width: 904px) {
+  .about .skill {
+    width: calc((100% - 20px) / 3);
+  }
+}
+@media (max-width: 680px) {
+  .about .skill {
+    width: calc((100% - 10px) / 2);
+  }
+}
+@media (max-width: 457px) {
+  .about .skill {
+    width:100%;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 900px) {
+  .about .right-left {
+    flex-direction: column;
+  }
+  .about .left-section,
+  .about .left-section .interiduce-me,
+  .about .right-section {
+    text-align: center;
+    width: 96%;
+    padding: 10px;
+  }
+  .about .left-section img {
+    width: 78%;
+  }
+  .about .right-section p {
+    line-height: 1.7;
+  }
+  .about .right-section p,
+  .about .right-section h2 {
+    justify-content: center;
+  }
+}

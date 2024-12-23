@@ -1,0 +1,70 @@
+.social-icons .all-icons {
+  width: 70%;
+  gap: 3.5rem;
+  color: #fff;
+  justify-content: center;
+  margin-inline: auto;
+  margin-top: 4rem;
+}
+.social-icons .all-icons a {
+  position: relative;
+  z-index: 1;
+  font-size: 1.5rem;
+}
+.social-icons .all-icons a:before {
+  background: var(--bg-icon-social);
+  padding: 5px;
+}
+.social-icons .all-icons a::after {
+  position: absolute;
+  content: "";
+  height: 33px;
+  width: 33px;
+  border: 2px solid var(--border-icon-social);
+  left: 0px;
+  top: -6px;
+  z-index: -1;
+  transform: rotate(45deg);
+  transition: 1s;
+  -webkit-transition: 0.5s;
+}
+
+.social-icons .all-icons .icon:hover::after {
+  transform: rotate(-406deg);
+}
+.social-icons .all-icons .icon:hover {
+  font-size: 1.4rem;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.social-icons .all-icons .icon.icon-facebook:hover {
+  color: var(--facebook-icon-hover);
+}
+.social-icons .all-icons .icon.icon-whatsapp:hover {
+  color: var(--whatsapp-icon-hover);
+}
+.social-icons .all-icons .icon.icon-linkedin:hover {
+  color: var(--linkedin-icon-hover);
+}
+.social-icons .all-icons .icon.icon-github:hover {
+  color: var(--github-icon-hover);
+}
+.social-icons .all-icons .icon.icon-facebook:hover:after {
+  border-color: var(--facebook-icon-hover);
+}
+.social-icons .all-icons .icon.icon-whatsapp:hover:after {
+  border-color: var(--whatsapp-icon-hover);
+}
+.social-icons .all-icons .icon.icon-linkedin:hover:after {
+  border-color: var(--linkedin-icon-hover);
+}
+.social-icons .all-icons .icon.icon-github:hover:after {
+  border-color: var(--github-icon-hover);
+}
+@media (max-width: 700px) {
+  .social-icons .all-icons {
+    width: 100%;
+    justify-content: space-around;
+  }
+}
+
