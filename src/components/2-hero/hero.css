@@ -21,6 +21,8 @@ section.hero .left-section {
   width: 70%;
   text-align: left;
 }
+ 
+section.hero .left-section .show-cv ,
 section.hero .left-section .download-cv {
   text-decoration: none;
   background: var(--secondary);
@@ -36,9 +38,16 @@ section.hero .left-section .download-cv {
   transition-duration: 0.2s;
   display: block;
   width: fit-content;
-  margin-top: 4rem;
   margin-inline: auto;
 }
+section.hero .left-section .download-cv { 
+  margin-top: 4rem;
+}
+section.hero .left-section .show-cv { 
+  margin-top: 1rem;
+}
+ 
+section.hero .left-section .show-cv:hover,
 section.hero .left-section .download-cv:hover {
   background: var(--blue);
   color: var(--title);
@@ -145,6 +154,8 @@ section.hero .animation {
   }
 }
 @media (max-width: 390px) {
+ 
+  section.hero .left-section .show-cv,
   section.hero .left-section .download-cv {
     width: 85%;
     display: flex;

@@ -51,15 +51,26 @@ const Hero = () => {
           most of everything I have learned.
         </p>
         <SocialIcons />
-      <a
+        <a
       className="download-cv"
         rel="noreferrer"
         target="_self"
-        href="https://drive.google.com/u/0/uc?id=14QWf09Oj1EXhoAIgvX4lsVWbzNN-UXkR&amp;export=download"
+        href="https://drive.google.com/u/0/uc?id=1hOzwUPfEPWwV-nCSPlj87EGrhq1aJhM4&amp;export=download"
         download=""
       >
-        Download My Resume
+        Download My CV
       </a>
+          <br/>
+      <a
+      className="show-cv"
+        rel="noreferrer"
+        target="_blank"
+        href="https://drive.google.com/file/d/1hOzwUPfEPWwV-nCSPlj87EGrhq1aJhM4/view?usp=sharing"
+        download=""
+      >
+       Show My CV
+      </a>
+   
       </div>
 
       <div className="right-section animation ">
